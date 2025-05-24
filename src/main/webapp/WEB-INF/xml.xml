@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+<!-- Tourist Register  -->
+	
+	<servlet>
+     	<servlet-name>TouristInsertServlet</servlet-name>
+     	<servlet-class>Tourist.TouristInsertServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>TouristInsertServlet</servlet-name>
+     	<url-pattern>/TouristInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Tourist Login  -->
+     <servlet>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<servlet-class>Tourist.LoginServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<url-pattern>/LoginServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Tourist Profile  -->
+     <servlet>
+     	<servlet-name>TouristProfileServlet</servlet-name>
+     	<servlet-class>Tourist.TouristProfileServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>TouristProfileServlet</servlet-name>
+     	<url-pattern>/TouristProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+      <!-- Tourist Profile Update  -->
+     <servlet>
+     	<servlet-name>UpdateTouristProfileServlet</servlet-name>
+     	<servlet-class>Tourist.UpdateTouristProfileServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>UpdateTouristProfileServlet</servlet-name>
+     	<url-pattern>/UpdateTouristProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Tourist Profile Delete  -->
+     <servlet>
+     	<servlet-name>DeleteTouristProfileServlet</servlet-name>
+     	<servlet-class>Tourist.DeleteTouristProfileServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>DeleteTouristProfileServlet</servlet-name>
+     	<url-pattern>/DeleteTouristProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Home Servlet  -->
+     <servlet>
+     	<servlet-name>HomeServlet</servlet-name>
+     	<servlet-class>Tourist.HomeServlet</servlet-class>
+     </servlet>
+     
+	<servlet-mapping>
+     	<servlet-name>HomeServlet</servlet-name>
+     	<url-pattern>/HomeServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>InsertReviewServlet </servlet-name>
+     	<servlet-class>model.InsertReviewServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>InsertReviewServlet</servlet-name>
+     	<url-pattern>/InsertReviewServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+    <!-- #################################################################### -->
+
+	<servlet>
+     	<servlet-name>DisplayReviewServlet </servlet-name>
+     	<servlet-class>TourReviewPackage.DisplayReviewServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DisplayReviewServlet</servlet-name>
+     	<url-pattern>/DisplayReviewServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>UpdateReviewServlet </servlet-name>
+     	<servlet-class>TourReviewPackage.UpdateReviewServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateReviewServlet</servlet-name>
+     	<url-pattern>/UpdateReviewServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>DeleteReviewServlet </servlet-name>
+     	<servlet-class>TourReviewPackage.DeleteReviewServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteReviewServlet</servlet-name>
+     	<url-pattern>/DeleteReviewServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!-- Request Form -->
+     <servlet>
+     	<servlet-name>InsertServlet</servlet-name>
+     	<servlet-class>TourGuidepkg.InsertServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>InsertServlet</servlet-name>
+     	<url-pattern>/InsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>RequestGetAll</servlet-name>
+     	<servlet-class>TourGuidepkg.RequestGetAll</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>RequestGetAll</servlet-name>
+     	<url-pattern>/RequestGetAll</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>UpdateServlet</servlet-name>
+     	<servlet-class>TourGuidepkg.UpdateServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateServlet</servlet-name>
+     	<url-pattern>/UpdateServlet</url-pattern>
+     </servlet-mapping>
+     
+       <servlet>
+     	<servlet-name>DeleteServlet</servlet-name>
+     	<servlet-class>TourGuidepkg.DeleteServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteServlet</servlet-name>
+     	<url-pattern>/DeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>InsertServletC</servlet-name>
+     	<servlet-class>Online_tour.InsertServletC</servlet-class>
+     </servlet>
+     
+    
+     <servlet-mapping>
+     	<servlet-name>InsertServletC</servlet-name>
+     	<url-pattern>/InsertServletC</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     
+      <servlet>
+     	<servlet-name>GetAllGuidesServletC</servlet-name>
+     	<servlet-class>Online_tour.GetAllGuidesServletC</servlet-class>
+     </servlet>
+     
+    
+     <servlet-mapping>
+     	<servlet-name>GetAllGuidesServletC</servlet-name>
+     	<url-pattern>/GetAllGuidesServletC</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     
+       
+      <servlet>
+     	<servlet-name>UpdateServletC</servlet-name>
+     	<servlet-class>Online_tour.UpdateServletC</servlet-class>
+     </servlet>
+     
+    
+     <servlet-mapping>
+     	<servlet-name>UpdateServletC</servlet-name>
+     	<url-pattern>/UpdateServletC</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+         <servlet>
+     	<servlet-name>DeleteServletC</servlet-name>
+     	<servlet-class>Online_tour.DeleteServletC</servlet-class>
+     </servlet>
+     
+    
+     <servlet-mapping>
+     	<servlet-name>DeleteServletC</servlet-name>
+     	<url-pattern>/DeleteServletC</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+   
+</web-app>
